@@ -1,0 +1,8 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: check data on server
+      command: date
+    - name: check ip on server
+      command: ifconfig
